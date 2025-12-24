@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Experiment 4</title>
+</head>
+<body>
+
+  <h2>Sample Registration Form</h2>
+
+  <form action="/submit-page" method="post">
+    <div>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="user_name">
+    </div>
+    <br>
+
+    <div>
+      <p>Gender:</p>
+      <input type="radio" id="male" name="gender" value="male">
+      <label for="male">Male</label><br>
+      
+      <input type="radio" id="female" name="gender" value="female">
+      <label for="female">Female</label><br>
+      
+      <input type="radio" id="other" name="gender" value="other">
+      <label for="other">Other</label>
+    </div>
+    <br>
+
+    <div>
+      <p>Interests:</p>
+      <input type="checkbox" id="coding" name="interests" value="coding">
+      <label for="coding">Coding</label><br>
+      
+      <input type="checkbox" id="music" name="interests" value="music">
+      <label for="music">Music</label><br>
+      
+      <input type="checkbox" id="sports" name="interests" value="sports">
+      <label for="sports">Sports</label>
+    </div>
+    <br>
+
+    <div>
+      <label for="city">City:</label>
+      <select id="city" name="user_city">
+        <option value="">--Please choose an option--</option>
+        <option value="mumbai">Mumbai</option>
+        <option value="delhi">Delhi</option>
+        <option value="bangalore">Bangalore</option>
+        <option value="kolkata">Kolkata</option>
+      </select>
+    </div>
+    <br>
+
+    <div>
+      <input type="submit" value="Submit Registration">
+      <input type="reset" value="Clear Form">
+    </div>
+  </form>
+
+</body>
+</html>
